@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/*****************************************************************/
+
+.header{
+  display: flex;
+  height: 90px;
+  background-color:#9D4EDD;
+}
+h1#header_bar{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+#header_logo{
+  width: 90px;
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  padding-inline-start: 10px; 
+  width:100%
+}
+ul li{
+  display: flex;
+  font-weight: bold;
+  padding: 5px 18px;
+  width:100%
+}
+ul li{
+  justify-content: flex-end;
+}
+
+input#counter {
+  background-color:#C77DFF;
+  text-decoration: none;  
+  border: 2px solid #5A189A; 
+  border-radius: 50px; 
+  font-size: 1rem;
+  color: #fff;
+  margin-right:10px;
+  width:200px;
+
+}
+input#defaultSearch {
+  background-color:#C77DFF;
+  text-decoration: none;  
+  border: 2px solid #5A189A; 
+  border-radius: 50px; 
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right:10px
+}
+input#defaultSearch:hover{
+  outline:0;
+  background-color: #5A189A;
+}
+.search {
+  background-color: transparent;
+  border: 2px solid #5A189A;
+  padding-left: 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 10px;
+  height: 42px
+  }
+.search:focus{
+  outline:0;
+  background-color: #5A189A;
+}
+.search::placeholder{
+  color: #fff;
+}
+#submit-button {
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+  text-decoration: none;
+  cursor: pointer;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: transparent;
+  margin-left: -40px;
+  margin-top: 12px;
+  border: none;
+  }
+form {
+  display:flex
+}
+
+
+div#body {
+  background-color: #5A189A;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body {
+  background-color: #5A189A;
+  font-style: Sans-serif;
+}
+      
+.movie {
+  width: 300px;
+  margin: 8px;
+  border-radius: 10px;
+  background-color: #E0AAFF;
+  position: relative;
+  overflow: hidden;
+}
+.movie img {
+  width:100%
+}
+.movie-info{
+    color:#5A189A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.movie-info h3{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-inline: auto
+}
+.movie:hover .overview{
+  transform:translateY(0)
+}
+.overview{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  color:#5A189A;
+  background-color: #E0AAFF;
+  padding: 1rem;
+  max-height: 100%;
+  transform:translateY(101%);
+  transition:transform 0.3s ease-in;
+}
+.overview h3{
+  font:bold
+}
+.overview span{
+  font-style: oblique;
+  font-weight:600;
+}
+button.more{
+  background-color: #C77DFF;
+  color: #5A189A;
+  font-size: 16px;
+  font-weight: 1000;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor:pointer
+}
+button#more:hover{
+  background-color: #9D4EDD;
+}
+
+h1#no_result{
+  color:#fff
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.8);
+  overflow-x: hidden;
+  transition: 0.7s;
+}
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+.overlay-content ul{
+  text-align:left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.review ul {
+  display:inline
+}
+div.review ul div{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.review ul div#content{
+  font-style: oblique;
+  color: rgba(255,255,255,0.7)
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
