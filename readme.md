@@ -1,13 +1,20 @@
-# CAB 432 React Express Example
-This is a simple example of serving a React Application from within your Express Server, alongside your API. In this example we have two separate folders, client and server - they each house their respective files and logic. We assume at this point you're able to containerize an application yourself so we have left that as an exercise for you.
+# Movie Review Application
 
-### Client
-The client directory was created using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). We have modified the boilerplate application to add a `FavoriteAnimal` component that makes a simple api request to `/api/question` and displays the response. You can follow this and similar patterns for all of your API requests.
+## Developed using
+A full-stack movie review application that allows users to search and explore movie details, reviews, and trailers. This project demonstrates proficiency in integrating third-party APIs, containerisation, and cloud deployment.
 
-### Server
-The server directory was created by following the Express [Hello World Example](https://expressjs.com/en/starter/hello-world.html) and static assets are served following the Express [Serving Static Files Example](https://expressjs.com/en/starter/static-files.html). There are comments in the `index.js` file explaining what's happening in there.
+### Tech Stack:
+- **React.js**: Front-end developed using React.js to provide a dynamic, responsive user experience.
+- **Express.js**: Back-end API server built with Express.js for handling requests and routing.
+- **Docker**: Containerised the application for consistent development, testing, and production environments.
+- **Amazon AWS**: Deployed the Dockerised application to the Amazon AWS platform for scalability and global accessibility.
 
-### Modifications
+### Features:
+- **RESTful API Integration**: Integrated APIs from OMDb, YouTube, and The New York Times to display comprehensive movie-related data, including reviews and trailers.
+- **Real-time Visitor Tracker**: Implemented cloud-based persistence services using Amazon S3 and Redis to track visitor activity in real-time.
+- **Movie Search Functionality**: Robust search functionality that dynamically displays movie information based on user queries.
+
+This project showcases my ability to build, containerize, and deploy full-stack applications with cloud services and API integrations.
 
 
 ### Getting Started
